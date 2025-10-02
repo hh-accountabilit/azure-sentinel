@@ -1,9 +1,13 @@
-# Microsoft Sentinel Deployment
 
-This repository contains Bicep templates and automation scripts to deploy Microsoft Sentinel.
+# Azure Sentinel Deployment
 
-## 🚀 Deploy to Azure
+This repository provides templates and automation scripts to deploy Microsoft Sentinel and its data connectors using Bicep.
 
-Click the button below to deploy via Azure Portal:
+---
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhh-accountabilit%2Fazure-sentinel%2Fmain%2Ftemplates%2Fsentinel.json)
+## 🚀 Deploy Sentinel Only
+
+Use this option to deploy Microsoft Sentinel to a Log Analytics workspace without any data connectors.
+
+[![Deploy to Azure(https://portal.azure.com/#create/Microsoft.Template this option to deploy Microsoft Sentinel along with selected data connectors. You can choose which connectors to enable during deployment.
+

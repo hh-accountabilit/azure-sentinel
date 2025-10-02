@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "workspaceName": {
+      "value": "my-law-workspace"
+    },
+    "deployAAD": {
+      "value": true
+    },
+    "deployO365": {
+      "value": true
+    },
+    "deployMDE": {
+      "value": true
+    },
+    "deployMDI": {
+      "value": true
+    },
+    "deployMDCApps": {
+      "value": true
+    },
+    "deployXDR": {
+      "value": true
+    },
+    "deployActivityLogs": {
+      "value": true
+    },
+    "deployAIP": {
+      "value": true
+    },
+    "deploySyslog": {
+      "value": true
+    },
+    "deployCEF": {
+      "value": true
+    },
+    "deployCustomLogs": {
+      "value": true
+    }
+  }
+}

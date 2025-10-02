@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "resources": [
+    {
+      "type": "Microsoft.OperationalInsights/workspaces",
+      "apiVersion": "2021-06-01",
+      "name": "sentinel-law",
+      "location": "[resourceGroup().location]",
+      "properties": {
+        "sku": {
+          "name": "PerGB2018"
+        },
+        "retentionInDays": 30
+      }
+    },
+    {
+      "type": "Microsoft.SecurityInsights/operationalInsights",
+      "apiVersion": "2021-10-01-preview",
+      "name": "default",
+      "dependsOn": [
+        "[resourceId('Microsoft.OperationalInsights/workspaces', 'sentinel-law')]"
+      ]
+    }
+  ]
+}
